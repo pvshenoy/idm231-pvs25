@@ -1,0 +1,93 @@
+body {
+    background-color: black;
+}
+
+nav {
+    height: 8vh;
+}
+.button1 {
+    border: 1px solid white;
+    padding: 1rem;
+    color: white;
+    background-color: black;
+}
+
+.divider-1 {
+    margin: 0rem;
+    border: solid .5px white;
+}
+.box-grid {
+    display: grid;
+    grid-template-columns: 56% 44%;
+    grid-template-rows: 65vh;
+    grid-template-areas: "cntext cnquestion"
+}
+
+.box-1 {
+    grid-area: cntext;
+}
+
+.cnlogo-text {
+    width: 80%;
+    padding: 6rem 0rem 0rem 6rem;
+    place-content: stretch stretch;
+}
+
+.box-2 {
+    border: 1px solid white;
+    border-right-style: none;
+    border-top-style: none;
+    border-bottom-style: none;
+    grid-area: cnquestion; 
+}
+
+.titletext {
+    font-size: 5rem;
+    line-height: 72px;
+    font-family: mono45-headline, monospace;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    padding: 6rem 0rem 0rem 3.5rem;
+    width: 28.5;
+}
+
+
+.js-bg-rectangle {
+    position: relative;
+    width: 41.85rem;
+    height: 30.75rem;
+    left: 7rem;
+    bottom: 25rem;
+    background: #E93333;
+    z-index: -1;
+}
+
+.js-submit-button {
+    border: 1px solid white;
+    background-color: black;
+    font-family: mono45-headline, monospace;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.25rem;
+    line-height: 72px;
+    text-align: center;
+    padding: 0rem 1.25rem;
+    color: white;
+    margin-left: 3rem;
+}
+
+.js-birthday-input {
+    border: 1px solid white;
+    background-color: black;
+    font-family: mono45-headline, monospace;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.25rem;
+    line-height: 72px;
+    text-align: center;
+    padding: 0rem 1.25rem;
+    color: gray;
+    width: 12rem;
+    margin-left: 5rem;
+}
