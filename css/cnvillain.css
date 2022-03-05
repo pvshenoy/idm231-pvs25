@@ -2,35 +2,62 @@ body {
     background-color: black;
 }
 
+
 nav {
-    height: 8vh;
-}
-.button1 {
+    display: flex;
+    justify-content: flex-end;
+    height: 4rem;
+    }
+
+
+.button {
     border: 1px solid white;
-    padding: 1rem;
-    color: white;
     background-color: black;
+    padding: 1rem 1rem 1rem 1rem;
+     width: 12rem;
+    text-align: center;
+    color: white;
+    font-family: mono45-headline, monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0rem;
+    margin-right: 2rem;
 }
 
-.divider-1 {
+.button__white {
+    border: 1px solid white;
+    margin-top: 1.5rem;
+    margin-right: 2rem;
+    padding: .65rem 1.5rem;
+}
+
+.top__linebreak {
+    margin-top: 2.5rem;
+    margin-bottom: 0rem;
+    border: solid .5px white;
+}
+
+.linebreak {
     margin: 0rem;
     border: solid .5px white;
 }
 .box-grid {
     display: grid;
     grid-template-columns: 56% 44%;
-    grid-template-rows: 65vh;
+    grid-template-rows: 35rem;
     grid-template-areas: "cntext cnquestion"
 }
 
 .box-1 {
     grid-area: cntext;
+    margin: auto;
 }
 
 .cnlogo-text {
-    width: 80%;
-    padding: 6rem 0rem 0rem 6rem;
-    place-content: stretch stretch;
+    width: 100%;
+    margin: auto;
 }
 
 .box-2 {
@@ -39,11 +66,12 @@ nav {
     border-top-style: none;
     border-bottom-style: none;
     grid-area: cnquestion; 
+    overflow: hidden;
 }
 
 .titletext {
     font-size: 5rem;
-    line-height: 72px;
+    line-height: 4.5rem;
     font-family: mono45-headline, monospace;
     font-weight: 500;
     font-style: normal;
@@ -52,29 +80,39 @@ nav {
     width: 28.5;
 }
 
+form {
+    margin: auto;
+}
 
 .js-bg-rectangle {
-    position: relative;
     width: 41.85rem;
     height: 30.75rem;
-    left: 7rem;
-    bottom: 25rem;
-    background: #E93333;
+    background-image: url('../images/index/IMG_4602.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 10rem;
+    bottom: 24rem;
+    /* background: #E93333; */
     z-index: -1;
 }
 
 .js-submit-button {
     border: 1px solid white;
-    background-color: black;
     font-family: mono45-headline, monospace;
     font-weight: 300;
     font-style: normal;
     font-size: 2.25rem;
-    line-height: 72px;
+    line-height: 4.5rem;
     text-align: center;
     padding: 0rem 1.25rem;
     color: white;
+    background-color: transparent;
     margin-left: 3rem;
+}
+
+.js-submit-button:hover {
+    box-shadow: 0.5rem 0.5rem goldenrod;
 }
 
 .js-birthday-input {
@@ -84,10 +122,121 @@ nav {
     font-weight: 300;
     font-style: normal;
     font-size: 2.25rem;
-    line-height: 72px;
+    line-height: 4.5rem;
     text-align: center;
     padding: 0rem 1.25rem;
     color: gray;
     width: 12rem;
     margin-left: 5rem;
 }
+
+h1 {
+    color: white;
+}
+
+.characters {
+    position: relative;
+    bottom: 15rem;
+    display: grid;
+    grid-template-columns: repeat(4);
+    grid-template-rows: repeat(3);
+    grid-template-areas: 
+    "him daffy aku tom" 
+    "chris cheese iceking scrappy"
+    "mandark grim katz mandy";
+    justify-content: center;
+    align-content: center;
+}
+
+.character_box {
+    padding: 4rem 2rem;
+    max-width: 13.625rem;
+    max-height: 14.4375rem;
+}
+
+.character_box:hover {
+    transform: scale(1.1)
+}
+.him {
+    grid-area: him;
+}
+
+.daffy {
+    grid-area: daffy;
+}
+ 
+.aku {
+    grid-area: aku;
+}
+ 
+.tom {
+    grid-area: tom;
+}
+ 
+.chris {
+    grid-area: chris;
+}
+ 
+.cheese {
+    grid-area: cheese;
+}
+ 
+.iceking {
+    grid-area: iceking;
+}
+ 
+.scrappy {
+    grid-area: scrappy;
+}
+ 
+.mandark {
+    grid-area: mandark;
+}
+
+.grim {
+    grid-area: grim;
+}
+
+.katz{
+    grid-area: katz;
+}
+
+.mandy {
+    grid-area: mandy;
+}
+ 
+.modal {
+    display: none; 
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 80%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+ 
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+

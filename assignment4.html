@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <style>
+        body {
+            background-color: white;
+        }
+        form {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: .5rem;
+            margin-top: 8rem;
+            color: black;
+            font-family: monospace;
+        }
+
+        p {
+            text-align: center;
+            font-family: monospace;
+            color: black;
+        }
+
+        .form_wrapper {
+            height: 30rem;
+            background-color: white;
+            max-width: 50%;
+            margin: 2rem auto;
+            border: 2px solid black;
+      
+        }
+
+        label {
+            font-family: monospace;
+            color: black;
+            padding-top: .8rem;
+        }
+        
+        input {
+            margin: 0rem 1.5rem;
+            color: #000;
+        }
+
+        .js-submit-button {
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+            padding: .5rem;
+        }
+
+        hr {
+            border: 1px solid black;
+            margin-top: 0rem;
+        }
+
+        .x {
+            padding: .5rem 1rem 0.5rem 0rem;
+            display: flex;
+            justify-content:flex-end;
+            color: black;
+            font-size: 2rem;
+        }
+
+        h2 {
+            margin-top: 2rem;
+            text-align: center;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+<div class="form_wrapper">
+    <span class="x">&times;</span>
+    <hr>
+    <h1>what season<br>were you born in?</h1>
+    <p>Find out below!</p>
+    <form action="">
+        <label for="birthdayInput">ENTER YOUR BIRTHDAY:</label>
+        <input id="birthdayInput" class="js-date-input" type="date" name="birthday">
+        <button class="js-submit-button" type="button">SUBMIT</button>
+      </form>
+      <div class="js-content-wrapper" style="display: none">
+          <h2> your birthday is: <span class="js-user-birthday"></span><br> your season is: <span class="js-content"></span> </h2>
+      </div>
+ </div>
+  <script src="scripts/birthday.js"></script>
+</body>
+</html>
