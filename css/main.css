@@ -41,23 +41,39 @@ nav {
 }
 
 .js-more-info {
-    display: flex;
+    display: none;
     justify-content: center;
     align-content: center;
     margin: auto;
     z-index: 999;
 }
 
+
+
 .modal_bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: auto;
     display: flex;
     flex-direction:column;
-    /* justify-content: center;
-    align-content: center; */
     width: 40rem;
     height: 20rem;
     border: 1px solid white;
     background-color: black;
+    animation: grow 1s cubic-bezier(0.65, 0, 0.35, 1) forwards;
 }
+
+@keyframes grow {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
 
 .more_info {
     text-align: center;
@@ -200,6 +216,7 @@ form {
 .character_box:hover {
     transform: scale(1.1)
 }
+
 .him {
     grid-area: him;
 }

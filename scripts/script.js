@@ -15,11 +15,18 @@ allVillains.addEventListener('click', function (event) {
 
 });
 
-const moreInfo = document.querySelector('.button_white');
+const moreInfo = document.querySelector('.button__white');
 
 moreInfo.addEventListener('click', function(event){
-  
-})
+  const moreInfoContent = document.querySelector('.js-more-info')
+  // alert('heyy');
+  if (moreInfoContent.style.display == "none") {
+    moreInfoContent.style.display = "flex";
+  } else {
+    moreInfoContent.style.display = "none";
+    heroContent.style.display = "block"
+  }
+});
 
 
 
