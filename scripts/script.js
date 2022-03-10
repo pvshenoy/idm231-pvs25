@@ -1,3 +1,6 @@
+
+
+// display all characters
 const allVillains = document.querySelector('.js-button');
 
 allVillains.addEventListener('click', function (event) {
@@ -14,6 +17,8 @@ allVillains.addEventListener('click', function (event) {
   }
 
 });
+
+// help button 
 
 const moreInfo = document.querySelector('.button__white');
 
@@ -40,6 +45,8 @@ xButton.addEventListener('click', function(event){
   }
 });
 
+
+// birthday input & response
 
 const birthdaySubmit = document.querySelector('.js-submit-button')
 
