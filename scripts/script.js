@@ -69,7 +69,7 @@ birthdaySubmit.addEventListener('click', function(event){
     } else if ((day >= 23 && month == 7) || (day <= 22 && month == 8)){ 
         zodiac = "LEO";
     } else if ((day >= 23 && month == 8) || (day <= 22 && month == 9)){ 
-        zodiac = "VIRGO";
+        zodiac = "VIRGO"; 
     } else if ((day >= 23 && month == 9) || (day <= 22 && month == 10)){ 
         zodiac = "LIBRA";
     } else if ((day >= 23 && month == 10) || (day <= 21 && month == 11)){ 
@@ -216,5 +216,7 @@ birthdaySubmit.addEventListener('click', function(event){
     // characterName.src = "images/characters/names/grim.svg"
     console.log("PISCES")
   }
+
+  // rewrite with if else statements?
 })
 
