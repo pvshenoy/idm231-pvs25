@@ -111,7 +111,7 @@ nav {
 
 .yellow_rectangle {
     justify-content: flex-start;
-    width: 40rem;
+    width: 100%;
     height: 100vh;
     background-color: gold;
 }
@@ -125,18 +125,18 @@ nav {
 
 .blue_rectangle {
     position: relative;
-    width: 20rem;
+    width: 100%;
     height: 100vh;
     background-color: cyan;
 }
 
-.rectangle {
+/* .rectangle {
     display: flex;
     width: 20%;
     height: 20%;
     background-color: cyan;
     color: goldenrod;
-}
+} */
 .box-2 {
     display: flex;
     flex-direction: column;
@@ -156,7 +156,7 @@ nav {
 form {
     display: flex;
     align-content:flex-start;
-    margin: auto;
+    margin-bottom: 10rem;
     padding-right: 8rem;
     padding-bottom: 1rem;
 }
@@ -263,4 +263,50 @@ form {
 
 .mandy {
     grid-area: mandy;
+}
+
+/* character card styles  */
+
+
+.js-character-modal {
+    display: none;
+    grid-template-columns: 52% 48%;
+    grid-template-areas: "splashart villaintext"
+}
+
+.splash_art {
+    grid-area: splashart;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.character_img {
+    display: flex;
+}
+.character_name {
+    display: flex;
+    position: relative;
+    bottom: -10rem;
+    right: 15rem;
+    flex-direction: row-reverse;
+}
+
+.zodiac_content {
+    grid-area: villaintext;
+    text-align: left;
+    color: white;
+    padding-top: 10rem;
+}
+
+.js-zodiac {
+    margin-bottom: .2rem;
+    font-size: 3rem;
+}
+.js-date-range {
+    margin-top: .2rem;
+    margin-bottom: 1rem;
+}
+
+.js-zodiac-desc {
+    margin: auto 2rem auto 0rem;
 }

@@ -29,14 +29,14 @@
                 <div class="primary_rectangle">
                     <div class="yellow_rectangle"></div>
                     <div class="blue_rectangle"></div>
-                    <div class="pink_rectangle"></div>
+                    <!-- <div class="pink_rectangle"></div> -->
                 </div>
             </div>
             <div class="box-2">
                 <img src="images/index/title.svg" class="cnlogo_text" alt="what cartoon network villain are you?">
                     <form>
                         <label for="birthday"></label>
-                        <input class="js-birthday-input" id="birthday" value="MM/DD" type="text">
+                        <input class="js-birthday-input" id="birthday" value="MM/DD/YYYY" type="date">
                         <button class="js-submit-button">GO!</button>
                     </form>
             </div>
@@ -57,7 +57,7 @@
     <div class="scrappy character_box"><a href="character_modal"><img src="images/index/scrappy.svg"></a></div>
 
     <!-- row 3 -->
-    <div class="mandark character_box"><a href="character_modal"><img src="images/index/mandark.png"></a></div>
+    <div class="mandark character_box"><a href="character_modal"><img src="images/index/mandark.svg"></a></div>
     <div class="grim character_box"><a href="character_modal"><img src="images/index/grim.svg"></a></div>
     <div class="katz character_box"><a href="character_modal"><img src="images/index/katz.svg"></a></div>
     <div class="mandy character_box"><a href="character_modal"><img src="images/index/mandy.svg"></a></div>
@@ -72,6 +72,17 @@
             can also click the <span style="color:magenta">all villains</span> button to see all of the villains in the generator.
         </p>
      </div>
+ </modal>
+ <modal class="js-character-modal">
+     <div class="character_img">
+        <img src="images/characters/aku_splash_art.svg" class="splash_art">
+        <img src="images/characters/names/aku.svg" class="character_name">
+     </div>
+    <div class="zodiac_content">
+        <h1 class="js-zodiac"></h1>
+        <p  class="js-date-range" style="padding-bottom: 2rem"></p>
+        <p class="js-zodiac-desc"></p>
+    </div>
  </modal>
     <script src="scripts/script.js"></script>
 </body>

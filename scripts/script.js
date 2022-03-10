@@ -28,77 +28,83 @@ moreInfo.addEventListener('click', function(event){
   }
 });
 
+const xButton = document.querySelector('.x')
+
+xButton.addEventListener('click', function(event){
+  const moreInfoContent = document.querySelector('.js-more-info')
+  if (moreInfoContent.style.display == "flex") {
+    moreInfoContent.style.display = "none";
+  } else {
+    moreInfoContent.style.display = "none";
+    heroContent.style.display = "block"
+  }
+});
 
 
+const birthdaySubmit = document.querySelector('.js-submit-button')
 
-// const modal = document.getElementById('.character-modal')
+birthdaySubmit.addEventListener('click', function(event){
+  event.preventDefault();
+  const dateInput = document.querySelector('.js-birthday-input');
+  let birthDate = new Date(dateInput.value);
+  const month = birthDate.getMonth() + 1;
+  const day = birthDate.getDate() + 1;
+  const heroContent = document.querySelector('.hero')
+  const zodiacContent =  document.querySelector('.js-character-modal')
+  const zodiacTitle = document.querySelector('.js-zodiac')
+  const zodiacSplashArt = document.querySelector('.splash_art')
+  const characterName = document.querySelector('character_name')
+  const subheading = document.querySelector('.js-date-range')
+  const zodiacDesc = document.querySelector('.js-zodiac-desc')
 
-// const himBtn = document.getElementsByClassName('.him')
-// const daffyBtn = document.getElementsByClassName('.daffy')
-// const akuBtn = document.getElementsByClassName('.aku')
-// const tomBtn = document.getElementsByClassName('.tom')
-// const chrisBtn = document.getElementsByClassName('.chris')
-// const cheeseBtn = document.getElementsByClassName('.cheese')
-// const iceBtn = document.getElementsByClassName('.iceking')
-// const scrappyBtn = document.getElementsByClassName('.scrappy')
-// const mandarkBtn = document.getElementsByClassName('.mandark')
-// const grimBtn = document.getElementsByClassName('.grim')
-// const katzBtn = document.getElementsByClassName('.katz')
-// const mandyBtn = document.getElementsByClassName('.mandy')
+  let zodiac = "";
+    if ((day >= 21 && month == 3) || (day <= 19 && month == 4)) {
+        zodiac = "ARIES";
+    } else if ((day >= 20 && month == 4) || (day <= 20 && month == 5)){ 
+        zodiac = "TAURUS";
+    } else if ((day >= 21 && month == 5) || (day <= 20 && month == 6)){ 
+        zodiac = "GEMINI";
+    } else if ((day >= 21 && month == 6) || (day <= 22 && month == 7)){ 
+        zodiac = "CANCER";
+    } else if ((day >= 23 && month == 7) || (day <= 22 && month == 8)){ 
+        zodiac = "LEO";
+    } else if ((day >= 23 && month == 8) || (day <= 22 && month == 9)){ 
+        zodiac = "VIRGO";
+    } else if ((day >= 23 && month == 9) || (day <= 22 && month == 10)){ 
+        zodiac = "LIBRA";
+    } else if ((day >= 23 && month == 10) || (day <= 21 && month == 11)){ 
+        zodiac = "SCORPIO";
+    } else if ((day >= 22 && month == 11) || (day <= 21 && month == 12)){ 
+        zodiac = "SAGGITARIUS";
+    } else if ((day >= 22 && month == 12) || (day <= 19 && month == 1)){ 
+        zodiac = "CAPRICORN";
+    } else if ((day >= 20 && month == 1) || (day <= 18 && month == 2)){ 
+        zodiac = "AQUARIUS";
+    } else if ((day >= 22 && month == 2) || (day <= 20 && month == 3)){ 
+        zodiac = "PISCES";
+  }
 
-// const span = document.getElementsByClassName("close")[0];
+  if (zodiac = "ARIES") {
+    zodiacContent.style.display = "grid"
+    heroContent.style.display = "none"
+    subheading.textContent = "MARCH 21ST - APRIL 19TH"
+    zodiacTitle.innerHTML = zodiac
+    zodiacDesc.textContent = "Just like AKU, you are cold, conniving, and long for release from the chains that hold you back."
+    zodiacSplashArt.src = "images/characters/aku_splash_art.svg"
+    characterName.src = "images/characters/names/aku.svg"
+    console.log("aries")
+  }
 
+  if (zodiac = "TAURUS") {
+    zodiacContent.style.display = "grid"
+    heroContent.style.display = "none"
+    subheading.textContent = "APRIL 20TH - JUNE 20TH"
+    zodiacTitle.innerHTML = zodiac
+    zodiacDesc.textContent = "Just like GRIM, you are cold, conniving, and long for release from the chains that hold you back."
+    zodiacSplashArt.src = "images/characters/aku_splash_art.svg"
+    characterName.src = "images/characters/names/grim.svg"
+    console.log("taurus")
+  }
 
-// himbtn.onclick = function() {
-//     modal.style.display = "block";
-//   }
-
-// daffybtn.onclick = function() {
-//     modal.style.display = "block";
-//   }
-
-// akubtn.onclick = function() {
-//     modal.style.display = "block";
-//   }
-
-// tombtn.onclick = function() {
-//     modal.style.display = "block";
-//   }
-// chrisbtn.onclick = function() {
-//     modal.style.display = "block";
-//   }
-
-// cheesebtn.onclick = function() {
-//     modal.style.display = "block";
-//   }
-
-// icebtn.onclick = function() {
-//     modal.style.display = "block";
-//   }
-
-// scrappybtn.onclick = function() {
-//     modal.style.display = "block";
-//   }
-
-// mandarkbtn.onclick = function() {
-//     modal.style.display = "block";
-//   }
-
-// grimbtn.onclick = function() {
-//     modal.style.display = "block";
-//   }
-
-// katzbtn.onclick = function() {
-//     modal.style.display = "block";
-//   }
-
-// mandybtn.onclick = function() {
-//     modal.style.display = "block";
-//   }
-
-// window.onclick = function(event) {
-//     if (event.target == modal) {
-//     modal.style.display = "none";
-//     }
-// }
+})
 
