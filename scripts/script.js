@@ -11,7 +11,7 @@ allVillains.addEventListener('click', function (event) {
   } else {
     villainsPage.style.display = "none";
     heroContent.style.display = "block"
-}
+  }
 
 });
 
@@ -80,9 +80,10 @@ birthdaySubmit.addEventListener('click', function(event){
         zodiac = "CAPRICORN";
     } else if ((day >= 20 && month == 1) || (day <= 18 && month == 2)){ 
         zodiac = "AQUARIUS";
-    } else if ((day >= 22 && month == 2) || (day <= 20 && month == 3)){ 
+    } else if ((day >= 19 && month == 2) || (day <= 20 && month == 3)){ 
         zodiac = "PISCES";
   }
+  console.log(zodiac);
 
   if (zodiac = "ARIES") {
     zodiacContent.style.display = "grid"
@@ -91,20 +92,129 @@ birthdaySubmit.addEventListener('click', function(event){
     zodiacTitle.innerHTML = zodiac
     zodiacDesc.textContent = "Just like AKU, you are cold, conniving, and long for release from the chains that hold you back."
     zodiacSplashArt.src = "images/characters/aku_splash_art.svg"
-    characterName.src = "images/characters/names/aku.svg"
+    // characterName.src = "images/characters/names/aku.svg"
     console.log("aries")
   }
 
   if (zodiac = "TAURUS") {
     zodiacContent.style.display = "grid"
     heroContent.style.display = "none"
-    subheading.textContent = "APRIL 20TH - JUNE 20TH"
+    subheading.textContent = "APRIL 20TH - MAY 20TH"
     zodiacTitle.innerHTML = zodiac
-    zodiacDesc.textContent = "Just like GRIM, you are cold, conniving, and long for release from the chains that hold you back."
+    zodiacDesc.textContent = "Lorem ipsum dolor sit TAURUS, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     zodiacSplashArt.src = "images/characters/aku_splash_art.svg"
-    characterName.src = "images/characters/names/grim.svg"
+    // characterName.src = "images/characters/names/grim.svg"
     console.log("taurus")
   }
 
+  if (zodiac = "GEMINI") {
+    zodiacContent.style.display = "grid"
+    heroContent.style.display = "none"
+    subheading.textContent = "MAY 21ST - JUNE 20TH"
+    zodiacTitle.innerHTML = zodiac
+    zodiacDesc.textContent = "Lorem ipsum dolor sit GEMINI, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    zodiacSplashArt.src = "images/characters/aku_splash_art.svg"
+    // characterName.src = "images/characters/names/grim.svg"
+    console.log("GEMINI")
+  }
+
+  if (zodiac = "CANCER") {
+    zodiacContent.style.display = "grid"
+    heroContent.style.display = "none"
+    subheading.textContent = "JUNE 21ST - JULY 22ND"
+    zodiacTitle.innerHTML = zodiac
+    zodiacDesc.textContent = "Lorem ipsum dolor sit CANCER, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    zodiacSplashArt.src = "images/characters/aku_splash_art.svg"
+    // characterName.src = "images/characters/names/grim.svg"
+    console.log("CANCER")
+  }
+
+  if (zodiac = "LEO") {
+    zodiacContent.style.display = "grid"
+    heroContent.style.display = "none"
+    subheading.textContent = "JULY 23RD - AUGUST 22ND"
+    zodiacTitle.innerHTML = zodiac
+    zodiacDesc.textContent = "Lorem ipsum dolor sit LEO, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    zodiacSplashArt.src = "images/characters/aku_splash_art.svg"
+    // characterName.src = "images/characters/names/grim.svg"
+    console.log("LEO")
+  }
+
+  if (zodiac = "VIRGO") {
+    zodiacContent.style.display = "grid"
+    heroContent.style.display = "none"
+    subheading.textContent = "AUGUST 23RD - SEPTEMBER 22ND"
+    zodiacTitle.innerHTML = zodiac
+    zodiacDesc.textContent = "Lorem ipsum dolor sit LEO, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    zodiacSplashArt.src = "images/characters/aku_splash_art.svg"
+    // characterName.src = "images/characters/names/grim.svg"
+    console.log("VIRGO")
+  }
+
+  if (zodiac = "LIBRA") {
+    zodiacContent.style.display = "grid"
+    heroContent.style.display = "none"
+    subheading.textContent = "SEPTEMBER 23RD - OCTOBER 22ND"
+    zodiacTitle.innerHTML = zodiac
+    zodiacDesc.textContent = "Lorem ipsum dolor sit LIBRA, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    zodiacSplashArt.src = "images/characters/aku_splash_art.svg"
+    // characterName.src = "images/characters/names/grim.svg"
+    console.log("LIBRA")
+  }
+
+  if (zodiac = "SCORPIO") {
+    zodiacContent.style.display = "grid"
+    heroContent.style.display = "none"
+    subheading.textContent = "OCTOBER 23RD - NOVEMBER 20TH"
+    zodiacTitle.innerHTML = zodiac
+    zodiacDesc.textContent = "Lorem ipsum dolor sit SCORPIO, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    zodiacSplashArt.src = "images/characters/aku_splash_art.svg"
+    // characterName.src = "images/characters/names/grim.svg"
+    console.log("SCORPIO")
+  }
+
+  if (zodiac = "SAGGITARIUS") {
+    zodiacContent.style.display = "grid"
+    heroContent.style.display = "none"
+    subheading.textContent = "NOVEMBER 21ST - DECEMBER 20TH"
+    zodiacTitle.innerHTML = zodiac
+    zodiacDesc.textContent = "Lorem ipsum dolor sit SAGGITARIUS, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    zodiacSplashArt.src = "images/characters/aku_splash_art.svg"
+    // characterName.src = "images/characters/names/grim.svg"
+    console.log("SAGGITARIUS")
+  }
+
+  if (zodiac = "CAPRICORN") {
+    zodiacContent.style.display = "grid"
+    heroContent.style.display = "none"
+    subheading.textContent = "DECEMBER 21ST - JANUARY 18TH"
+    zodiacTitle.innerHTML = zodiac
+    zodiacDesc.textContent = "Lorem ipsum dolor sit CAPRICORN, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    zodiacSplashArt.src = "images/characters/aku_splash_art.svg"
+    // characterName.src = "images/characters/names/grim.svg"
+    console.log("CAPRICORN")
+  }
+
+  if (zodiac = "AQUARIUS") {
+    zodiacContent.style.display = "grid"
+    heroContent.style.display = "none"
+    subheading.textContent = "JANUARY 19TH - FEBRUARY 18TH"
+    zodiacTitle.innerHTML = zodiac
+    zodiacDesc.textContent = "Lorem ipsum dolor sit AQUARIUS, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    zodiacSplashArt.src = "images/characters/aku_splash_art.svg"
+    // characterName.src = "images/characters/names/grim.svg"
+    console.log("AQUARIUS")
+  }
+
+  if (zodiac = "PISCES") {
+    zodiacContent.style.display = "grid"
+    heroContent.style.display = "none"
+    subheading.textContent = "FEBRUARY 19TH - MARCH 20TH"
+    zodiacTitle.innerHTML = zodiac
+    zodiacDesc.textContent = "Lorem ipsum dolor sit PISCES, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    zodiacSplashArt.src = "images/characters/aku_splash_art.svg"
+    // characterName.src = "images/characters/names/grim.svg"
+    console.log("PISCES")
+  }
 })
 
