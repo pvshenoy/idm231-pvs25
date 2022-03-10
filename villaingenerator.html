@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <link rel="stylesheet" href="https://use.typekit.net/url2gfr.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <title>Cartoon Network Villain Generator</title>
+</head>
+<body>
+    <nav>
+        <a>
+            <button class="js-button">ALL VILLAINS</button>
+        </a>
+        <a>
+            <img src="images/index/i.svg" class="button__white" alt="more info">
+        </a>
+ </nav>
+ <hr class="top__linebreak">
+ <section class="hero">
+        <!-- <hr class="top__linebreak"> -->
+        <div class="box-grid">
+            <div class="box-1">
+                <div class="primary_rectangle">
+                    <div class="yellow_rectangle"></div>
+                    <div class="blue_rectangle"></div>
+                    <div class="pink_rectangle"></div>
+                </div>
+            </div>
+            <div class="box-2">
+                <img src="images/index/title.svg" class="cnlogo_text" alt="what cartoon network villain are you?">
+                    <form>
+                        <label for="birthday"></label>
+                        <input class="js-birthday-input" id="birthday" value="MM/DD" type="text">
+                        <button class="js-submit-button">GO!</button>
+                    </form>
+            </div>
+        </div>
+    </section> 
+
+ <section class="characters">
+    <!-- row 1 -->
+    <div class="him character_box"><a href="character_modal"><img src="images/index/HIM.svg"></a></div>
+    <div class="daffy character_box"><a href="character_modal"><img src="images/index/daffy.svg"></a></div>
+    <div class="aku character_box"><a href="character_modal"><img src="images/index/aku.svg"></a></div>
+    <div class="tom character_box"><a href="character_modal"><img src="images/index/tom.svg"></a></div>
+
+    <!-- row 2 -->
+    <div class="chris character_box"><a href="character_modal"><img src="images/index/chris.svg"></a></div>
+    <div class="cheese character_box"><a href="character_modal"><img src="images/index/cheese.svg"></a></div>
+    <div class="iceking character_box"><a href="character_modal"><img src="images/index/ice.svg"></a></div>
+    <div class="scrappy character_box"><a href="character_modal"><img src="images/index/scrappy.svg"></a></div>
+
+    <!-- row 3 -->
+    <div class="mandark character_box"><a href="character_modal"><img src="images/index/mandark.png"></a></div>
+    <div class="grim character_box"><a href="character_modal"><img src="images/index/grim.svg"></a></div>
+    <div class="katz character_box"><a href="character_modal"><img src="images/index/katz.svg"></a></div>
+    <div class="mandy character_box"><a href="character_modal"><img src="images/index/mandy.svg"></a></div>
+ </section>
+ <modal class="js-more-info">
+     <div class="modal_bg">
+         <span class="x">&times;</span>
+        <h1 class="more_info">WELCOME TO THE CARTOON NETWORK VILLAIN GENERATOR</h1>
+        <p class="more_info">
+            Type in your birthday in the <span style="color: gold">MM/DD/YYYY</span> 
+            format to find the cartoon network villain that matches your zodiac sign! Alternatively, you 
+            can also click the <span style="color:magenta">all villains</span> button to see all of the villains in the generator.
+        </p>
+     </div>
+ </modal>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

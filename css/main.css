@@ -1,0 +1,249 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color:white;
+    font-family: mono45-headline, monospace;
+}
+p {
+    color:white;
+    font-family: 'IBM Plex Mono', monospace;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 4rem;
+    }
+
+
+.js-button {
+    border: 1px solid white;
+    background-color: black;
+    padding: 1rem 1rem 1rem 1rem;
+     width: 12rem;
+    text-align: center;
+    color: white;
+    font-family: mono45-headline, monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0rem;
+    margin-right: 2rem;
+}
+
+.button__white {
+    border: 1px solid white;
+    margin-top: 1.5rem;
+    margin-right: 2rem;
+    padding: .65rem 1.5rem;
+}
+
+.js-more-info {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    z-index: 999;
+}
+
+.modal_bg {
+    display: flex;
+    flex-direction:column;
+    /* justify-content: center;
+    align-content: center; */
+    width: 40rem;
+    height: 20rem;
+    border: 1px solid white;
+    background-color: black;
+}
+
+.more_info {
+    text-align: center;
+    padding: 0rem 1rem;
+}
+
+.x {
+    display: flex;
+    flex-direction: row-reverse;
+    color: white;
+    padding: 1rem;
+    font-size: 2rem;
+}
+.top__linebreak {
+    margin-top: 2.5rem;
+    margin-bottom: 0rem;
+    border: solid .5px white;
+}
+
+.box-grid {
+    display: grid;
+    grid-template-columns: 52% 48%;
+    grid-template-areas: "cntext cnquestion"
+}
+
+.box-1 {
+    grid-area: cntext;
+    overflow: hidden;
+}
+
+.primary_rectangle {
+    display: flex;
+    flex-direction: row;
+}
+
+.yellow_rectangle {
+    justify-content: flex-start;
+    width: 40rem;
+    height: 100vh;
+    background-color: gold;
+}
+
+.pink_rectangle {
+    justify-content: flex-end;
+    width: 100%;
+    height: 50%;
+    background-color: magenta
+}
+
+.blue_rectangle {
+    position: relative;
+    width: 20rem;
+    height: 100vh;
+    background-color: cyan;
+}
+
+.rectangle {
+    display: flex;
+    width: 20%;
+    height: 20%;
+    background-color: cyan;
+    color: goldenrod;
+}
+.box-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border: none;
+    grid-area: cnquestion; 
+    overflow: hidden;
+}
+
+.cnlogo_text {
+    margin: 15vh auto 3rem auto;
+    padding: 1rem;
+    width: 70%;
+}
+
+form {
+    display: flex;
+    align-content:flex-start;
+    margin: auto;
+    padding-right: 8rem;
+    padding-bottom: 1rem;
+}
+
+.js-submit-button {
+    border: 1px solid white;
+    font-family: mono45-headline, monospace;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.25rem;
+    line-height: 4.5rem;
+    text-align: center;
+    padding: 0rem 1.25rem;
+    color: white;
+    background-color: transparent;
+    margin-left: 3rem;
+}
+
+.js-submit-button:hover {
+    box-shadow: 0.5rem 0.5rem goldenrod;
+}
+
+.js-birthday-input {
+    border: 1px solid white;
+    background-color: black;
+    font-family: mono45-headline, monospace;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.25rem;
+    line-height: 4.5rem;
+    text-align: center;
+    padding: 0rem 1.25rem;
+    color: gray;
+    width: 12rem;
+    margin-left: 5rem;
+}
+
+
+.characters {
+    display: none;
+    grid-template-columns: repeat(4);
+    grid-template-rows: repeat(3);
+    grid-template-areas: 
+    "him daffy aku tom" 
+    "chris cheese iceking scrappy"
+    "mandark grim katz mandy";
+    justify-content: center;
+    align-content: center;
+}
+
+.character_box {
+    padding: 4rem 2rem;
+    max-width: 13.625rem;
+    max-height: 14.4375rem;
+}
+
+.character_box:hover {
+    transform: scale(1.1)
+}
+.him {
+    grid-area: him;
+}
+
+.daffy {
+    grid-area: daffy;
+}
+ 
+.aku {
+    grid-area: aku;
+}
+ 
+.tom {
+    grid-area: tom;
+}
+ 
+.chris {
+    grid-area: chris;
+}
+ 
+.cheese {
+    grid-area: cheese;
+}
+ 
+.iceking {
+    grid-area: iceking;
+}
+ 
+.scrappy {
+    grid-area: scrappy;
+}
+ 
+.mandark {
+    grid-area: mandark;
+}
+
+.grim {
+    grid-area: grim;
+}
+
+.katz{
+    grid-area: katz;
+}
+
+.mandy {
+    grid-area: mandy;
+}
