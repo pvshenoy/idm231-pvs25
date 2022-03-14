@@ -295,10 +295,10 @@ form {
     grid-area: villaintext;
     text-align: left;
     color: white;
-    padding-top: 10rem;
 }
 
 .js-zodiac {
+    margin-top: 6rem;
     margin-bottom: .2rem;
     font-size: 3rem;
 }

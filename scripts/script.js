@@ -1,4 +1,10 @@
-
+const heroContent = document.querySelector('.hero')
+const zodiacContent =  document.querySelector('.js-character-modal')
+const zodiacTitle = document.querySelector('.js-zodiac')
+const zodiacSplashArt = document.querySelector('.splash_art')
+const characterName = document.querySelector('character_name')
+const subheading = document.querySelector('.js-date-range')
+const zodiacDesc = document.querySelector('.js-zodiac-desc')
 
 // display all characters
 const allVillains = document.querySelector('.js-button');
@@ -15,7 +21,6 @@ allVillains.addEventListener('click', function (event) {
     villainsPage.style.display = "none";
     heroContent.style.display = "block"
   }
-
 });
 
 // help button 
@@ -56,14 +61,7 @@ birthdaySubmit.addEventListener('click', function(event){
   let birthDate = new Date(dateInput.value);
   const month = birthDate.getMonth() + 1;
   const day = birthDate.getDate() + 1;
-  const heroContent = document.querySelector('.hero')
-  const zodiacContent =  document.querySelector('.js-character-modal')
-  const zodiacTitle = document.querySelector('.js-zodiac')
-  const zodiacSplashArt = document.querySelector('.splash_art')
-  const characterName = document.querySelector('character_name')
-  const subheading = document.querySelector('.js-date-range')
-  const zodiacDesc = document.querySelector('.js-zodiac-desc')
-
+console.log("hi");
   let zodiac = "";
     if ((day >= 21 && month == 3) || (day <= 19 && month == 4)) {
         zodiac = "ARIES";
@@ -92,18 +90,19 @@ birthdaySubmit.addEventListener('click', function(event){
   }
   console.log(zodiac);
 
-  if (zodiac = "ARIES") {
+
+  if (zodiac == "ARIES") {
     zodiacContent.style.display = "grid"
     heroContent.style.display = "none"
     subheading.textContent = "MARCH 21ST - APRIL 19TH"
-    zodiacTitle.innerHTML = zodiac
+    zodiacTitle.innerHTML = zodiac;
     zodiacDesc.textContent = "Just like AKU, you are cold, conniving, and long for release from the chains that hold you back."
     zodiacSplashArt.src = "images/characters/aku_splash_art.svg"
     // characterName.src = "images/characters/names/aku.svg"
     console.log("aries")
-  }
-
-  if (zodiac = "TAURUS") {
+  } 
+  
+  if (zodiac == "TAURUS") {
     zodiacContent.style.display = "grid"
     heroContent.style.display = "none"
     subheading.textContent = "APRIL 20TH - MAY 20TH"
@@ -113,8 +112,8 @@ birthdaySubmit.addEventListener('click', function(event){
     // characterName.src = "images/characters/names/grim.svg"
     console.log("taurus")
   }
-
-  if (zodiac = "GEMINI") {
+ 
+  if (zodiac == "GEMINI") {
     zodiacContent.style.display = "grid"
     heroContent.style.display = "none"
     subheading.textContent = "MAY 21ST - JUNE 20TH"
@@ -125,7 +124,7 @@ birthdaySubmit.addEventListener('click', function(event){
     console.log("GEMINI")
   }
 
-  if (zodiac = "CANCER") {
+  if (zodiac == "CANCER") {
     zodiacContent.style.display = "grid"
     heroContent.style.display = "none"
     subheading.textContent = "JUNE 21ST - JULY 22ND"
@@ -136,7 +135,7 @@ birthdaySubmit.addEventListener('click', function(event){
     console.log("CANCER")
   }
 
-  if (zodiac = "LEO") {
+  if (zodiac == "LEO") {
     zodiacContent.style.display = "grid"
     heroContent.style.display = "none"
     subheading.textContent = "JULY 23RD - AUGUST 22ND"
@@ -147,7 +146,7 @@ birthdaySubmit.addEventListener('click', function(event){
     console.log("LEO")
   }
 
-  if (zodiac = "VIRGO") {
+  if (zodiac == "VIRGO") {
     zodiacContent.style.display = "grid"
     heroContent.style.display = "none"
     subheading.textContent = "AUGUST 23RD - SEPTEMBER 22ND"
@@ -158,7 +157,7 @@ birthdaySubmit.addEventListener('click', function(event){
     console.log("VIRGO")
   }
 
-  if (zodiac = "LIBRA") {
+  if (zodiac == "LIBRA") {
     zodiacContent.style.display = "grid"
     heroContent.style.display = "none"
     subheading.textContent = "SEPTEMBER 23RD - OCTOBER 22ND"
@@ -169,7 +168,7 @@ birthdaySubmit.addEventListener('click', function(event){
     console.log("LIBRA")
   }
 
-  if (zodiac = "SCORPIO") {
+  if (zodiac == "SCORPIO") {
     zodiacContent.style.display = "grid"
     heroContent.style.display = "none"
     subheading.textContent = "OCTOBER 23RD - NOVEMBER 20TH"
@@ -180,7 +179,7 @@ birthdaySubmit.addEventListener('click', function(event){
     console.log("SCORPIO")
   }
 
-  if (zodiac = "SAGGITARIUS") {
+  if (zodiac == "SAGGITARIUS") {
     zodiacContent.style.display = "grid"
     heroContent.style.display = "none"
     subheading.textContent = "NOVEMBER 21ST - DECEMBER 20TH"
@@ -191,7 +190,7 @@ birthdaySubmit.addEventListener('click', function(event){
     console.log("SAGGITARIUS")
   }
 
-  if (zodiac = "CAPRICORN") {
+  if (zodiac == "CAPRICORN") {
     zodiacContent.style.display = "grid"
     heroContent.style.display = "none"
     subheading.textContent = "DECEMBER 21ST - JANUARY 18TH"
@@ -202,7 +201,7 @@ birthdaySubmit.addEventListener('click', function(event){
     console.log("CAPRICORN")
   }
 
-  if (zodiac = "AQUARIUS") {
+  if (zodiac == "AQUARIUS") {
     zodiacContent.style.display = "grid"
     heroContent.style.display = "none"
     subheading.textContent = "JANUARY 19TH - FEBRUARY 18TH"
@@ -213,17 +212,40 @@ birthdaySubmit.addEventListener('click', function(event){
     console.log("AQUARIUS")
   }
 
-  if (zodiac = "PISCES") {
+  if (zodiac == "PISCES") {
     zodiacContent.style.display = "grid"
     heroContent.style.display = "none"
     subheading.textContent = "FEBRUARY 19TH - MARCH 20TH"
     zodiacTitle.innerHTML = zodiac
     zodiacDesc.textContent = "Lorem ipsum dolor sit PISCES, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     zodiacSplashArt.src = "images/characters/aku_splash_art.svg"
-    // characterName.src = "images/characters/names/grim.svg"
+    characterName.src = "images/characters/names/grim.svg"
     console.log("PISCES")
   }
-
-  // rewrite with if else statements?
 })
+
+const characterx = document.getElementById("x")
+
+characterx.addEventListener('click', function(event){
+  if (zodiacContent.style.display == "grid") {
+    zodiacContent.style.display = "none";
+    heroContent.style.display = "grid"
+  } else {
+    zodiacContent.style.display = "none";
+    heroContent.style.display = "block"
+  }
+})
+
+const himButton = document.querySelector(".him")
+const daffyButton = document.querySelector(".daffy")
+const akuButton = document.querySelector(".aku")
+const tomButton = document.querySelector(".tom")
+const chrisButton = document.querySelector(".chris")
+const cheeseButton = document.querySelector(".cheese")
+const iceButton = document.querySelector(".ice")
+const scrappyButton = document.querySelector(".scrappy")
+const mojoButton = document.querySelector(".mojo")
+const grimButton = document.querySelector(".grim")
+const katzButton = document.querySelector(".katz")
+const mandyButton = document.querySelector(".mandy")
 
