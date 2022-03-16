@@ -22,6 +22,7 @@
         </a>
  </nav>
  <hr class="top__linebreak">
+ <div class="js-modal-wrapper">
  <section class="hero">
         <!-- <hr class="top__linebreak"> -->
         <div class="box-grid">
@@ -43,48 +44,49 @@
         </div>
     </section> 
 
+ 
+    <div class="js-more-info">
+        <div class="modal_bg">
+            <span class="x">&times;</span>
+           <h1 class="more_info">WELCOME TO THE CARTOON NETWORK VILLAIN GENERATOR!</h1>
+           <p class="more_info">
+               Type in your birthday in the <span style="color: gold">MM/DD/YYYY</span> 
+               format to find the cartoon network villain that matches your zodiac sign! Alternatively, you 
+               can also click the <span style="color:magenta">all villains</span> button to see all of the villains in the generator.
+           </p>
+        </div>
+    </div>
+    <div class="js-character-modal">
+           <img src="images/characters/aku_splash.svg" class="splash_art">
+           <img src="images/characters/names/aku.svg" class="character_name">
+       <div class="zodiac_content">
+           <span id="x" class="x" style="font-size: 5rem; padding-right: 2rem;">&times;</span>
+           <h1 class="js-zodiac"></h1>
+           <p  class="js-date-range" style="padding-bottom: 2rem"></p>
+           <p class="js-zodiac-desc"></p>
+       </div>
+    </div>
+ </div>
  <section class="characters">
     <!-- row 1 -->
-    <div class="him character_box"><a href="character_modal"><img src="images/index/HIM.svg"></a></div>
-    <div class="daffy character_box"><a href="character_modal"><img src="images/index/daffy.svg"></a></div>
-    <div class="aku character_box"><a href="character_modal"><img src="images/index/aku.svg"></a></div>
-    <div class="tom character_box"><a href="character_modal"><img src="images/index/tom.svg"></a></div>
+    <div data-audio-file="sounds/him.mp3" data-character="him" class="him character_box"><img src="images/index/HIM.svg"></div>
+    <div data-audio-file="" class="daffy character_box"><img src="images/index/daffy.svg"></div>
+    <div data-audio-file="" class="aku character_box"><img src="images/index/aku.svg"></div>
+    <div data-audio-file="sounds/tom.mp3" class="tom character_box"><img src="images/index/tom.svg"></div>
 
     <!-- row 2 -->
-    <div class="chris character_box"><a href="character_modal"><img src="images/index/chris.svg"></a></div>
-    <div class="cheese character_box"><a href="character_modal"><img src="images/index/cheese.svg"></a></div>
-    <div class="iceking character_box"><a href="character_modal"><img src="images/index/ice.svg"></a></div>
-    <div class="scrappy character_box"><a href="character_modal"><img src="images/index/scrappy.svg"></a></div>
+    <div data-audio-file="" class="chris character_box"><img src="images/index/chris.svg"></div>
+    <div data-audio-file="" class="cheese character_box"><img src="images/index/cheese.svg"></div>
+    <div data-audio-file="" class="iceking character_box"><img src="images/index/ice.svg"></div>
+    <div data-audio-file="" class="scrappy character_box"><img src="images/index/scrappy.svg"></div>
 
     <!-- row 3 -->
-    <div class="mandark character_box"><a href="character_modal"><img src="images/index/mandark.svg"></a></div>
-    <div class="grim character_box"><a href="character_modal"><img src="images/index/grim.svg"></a></div>
-    <div class="katz character_box"><a href="character_modal"><img src="images/index/katz.svg"></a></div>
-    <div class="mandy character_box"><a href="character_modal"><img src="images/index/mandy.svg"></a></div>
+    <div data-audio-file="" class="mojo character_box"><img src="images/index/mojo.svg"></div>
+    <div data-audio-file="" class="grim character_box"><img src="images/index/grim.svg"></div>
+    <div data-audio-file="sounds/katz.mp3" class="katz character_box"><img src="images/index/katz.svg"></div>
+    <div data-audio-file="sounds/mandy.mp3" class="mandy character_box"><img src="images/index/mandy.svg"></div>
  </section>
- <modal class="js-more-info">
-     <div class="modal_bg">
-         <span class="x">&times;</span>
-        <h1 class="more_info">WELCOME TO THE CARTOON NETWORK VILLAIN GENERATOR!</h1>
-        <p class="more_info">
-            Type in your birthday in the <span style="color: gold">MM/DD/YYYY</span> 
-            format to find the cartoon network villain that matches your zodiac sign! Alternatively, you 
-            can also click the <span style="color:magenta">all villains</span> button to see all of the villains in the generator.
-        </p>
-     </div>
- </modal>
- <modal class="js-character-modal">
-     <div class="character_img">
-        <img src="images/characters/aku_splash_art.svg" class="splash_art">
-        <img src="images/characters/names/aku.svg" class="character_name">
-     </div>
-    <div class="zodiac_content">
-        <span id="x" class="x">&times;</span>
-        <h1 class="js-zodiac"></h1>
-        <p  class="js-date-range" style="padding-bottom: 2rem"></p>
-        <p class="js-zodiac-desc"></p>
-    </div>
- </modal>
-    <script src="scripts/script.js"></script>
+ <audio id="speakers"></audio>
+<script src="scripts/script.js"></script>
 </body>
 </html>

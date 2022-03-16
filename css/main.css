@@ -38,6 +38,7 @@ nav {
     margin-top: 1.5rem;
     margin-right: 2rem;
     padding: .65rem 1.5rem;
+    cursor: auto;
 }
 
 .js-more-info {
@@ -62,6 +63,7 @@ nav {
     border: 1px solid white;
     background-color: black;
     animation: grow 1s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    z-index: 999;
 }
 
 @keyframes grow {
@@ -96,7 +98,8 @@ nav {
 .box-grid {
     display: grid;
     grid-template-columns: 52% 48%;
-    grid-template-areas: "cntext cnquestion"
+    grid-template-areas: "cntext cnquestion";
+    max-height: 85vh;
 }
 
 .box-1 {
@@ -114,6 +117,7 @@ nav {
     width: 100%;
     height: 100vh;
     background-color: gold;
+    z-index: 990;
 }
 
 .pink_rectangle {
@@ -128,6 +132,7 @@ nav {
     width: 100%;
     height: 100vh;
     background-color: cyan;
+    z-index: 995;
 }
 
 /* .rectangle {
@@ -179,6 +184,14 @@ form {
     box-shadow: 0.5rem 0.5rem goldenrod;
 }
 
+.button__white:hover {
+    box-shadow: 0.5rem 0.5rem magenta;
+}
+
+.js-button:hover {
+    box-shadow: 0.5rem 0.5rem cyan;
+}
+
 .js-birthday-input {
     border: 1px solid white;
     background-color: black;
@@ -202,7 +215,7 @@ form {
     grid-template-areas: 
     "him daffy aku tom" 
     "chris cheese iceking scrappy"
-    "mandark grim katz mandy";
+    "mojo grim katz mandy";
     justify-content: center;
     align-content: center;
 }
@@ -249,8 +262,8 @@ form {
     grid-area: scrappy;
 }
  
-.mandark {
-    grid-area: mandark;
+.mojo {
+    grid-area: mojo;
 }
 
 .grim {
@@ -271,24 +284,37 @@ form {
 .js-character-modal {
     display: none;
     grid-template-columns: 52% 48%;
-    grid-template-areas: "splashart villaintext"
+    grid-template-areas: "splashart villaintext";
+    max-height: 50vh;
 }
 
 .splash_art {
     grid-area: splashart;
-    margin: auto;
-    padding-top: 3rem;
+    margin: 2rem 0rem 0rem 4rem;
+    width: 80%;
 }
 
 .character_img {
     display: flex;
 }
+
 .character_name {
     display: flex;
     position: relative;
-    bottom: -10rem;
-    right: 15rem;
+    left: 25rem;
+    bottom: 14rem;
+    z-index: 1;
     flex-direction: row-reverse;
+    animation: box-shadow 2s ease-in-out forwards ;
+}
+
+@keyframes box-shadow {
+    from {
+        box-shadow: none;
+    } 
+    to {
+        box-shadow: 0.5rem 0.5rem goldenrod;
+    }
 }
 
 .zodiac_content {
@@ -298,7 +324,7 @@ form {
 }
 
 .js-zodiac {
-    margin-top: 6rem;
+    margin-top: 9rem;
     margin-bottom: .2rem;
     font-size: 3rem;
 }
