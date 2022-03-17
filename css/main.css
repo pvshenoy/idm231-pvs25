@@ -201,9 +201,9 @@ form {
     font-size: 2.25rem;
     line-height: 4.5rem;
     text-align: center;
-    padding: 0rem 1.25rem;
-    color: magenta;
-    width: 12rem;
+    padding: 0rem 1.25rem 0rem 3rem;
+    color: gray;
+    width: 16rem;
     margin-left: 5rem;
 }
 
@@ -215,7 +215,7 @@ form {
     grid-template-areas: 
     "him daffy aku tom" 
     "chris cheese iceking scrappy"
-    "mojo grim katz mandy";
+    "mojo father katz mandy";
     justify-content: center;
     align-content: center;
 }
@@ -266,8 +266,8 @@ form {
     grid-area: mojo;
 }
 
-.grim {
-    grid-area: grim;
+.father {
+    grid-area: father;
 }
 
 .katz{
@@ -305,17 +305,24 @@ form {
     bottom: 14rem;
     z-index: 1;
     flex-direction: row-reverse;
-    animation: box-shadow 2s ease-in-out forwards ;
+    animation: box-shadow 3s ease-in-out forwards 1s;
 }
 
 @keyframes box-shadow {
-    from {
+    0% {
         box-shadow: none;
     } 
-    to {
-        box-shadow: 0.5rem 0.5rem goldenrod;
+    30% {
+        box-shadow: 0.5rem 0.5rem goldenrod; 
+    }
+    90% {
+        box-shadow: 0.5rem 0.5rem goldenrod; 
+    }
+    100% {
+        box-shadow: none;
     }
 }
+
 
 .zodiac_content {
     grid-area: villaintext;
@@ -324,7 +331,7 @@ form {
 }
 
 .js-zodiac {
-    margin-top: 9rem;
+    margin-top: 5rem;
     margin-bottom: .2rem;
     font-size: 3rem;
 }
@@ -335,4 +342,176 @@ form {
 
 .js-zodiac-desc {
     margin: auto 2rem auto 0rem;
+    max-width: 30rem;
 }
+
+.character_traits {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5rem;
+    max-width: 30rem;
+}
+
+.traits {
+    font-family: IBM Plex Mono, monospace;
+    color: goldenrod;
+}
+
+.villain_type {
+    color: white;
+}
+
+.goal {
+    color: white;
+}
+
+.crimes {
+    color: white;
+}
+.tv_show {
+    margin-right: 1rem;
+    text-align: right;
+    font-family: IBM Plex Mono, monospace;
+    font-weight: 100;
+    max-width: 6rem;
+    color: cyan;  
+
+}
+
+/* #00FFFF */
+
+/* to be fixed */
+
+/* 
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #232323;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .box {
+      width: 250px;
+      height: 250px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+  
+      .title {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 50px;
+  
+        .block {
+          width: 0%;
+          height: inherit;
+          background: #ffb510;
+          position: absolute;
+          animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+          display: flex;
+        }
+  
+        h1 {
+          font-family: 'Poppins';
+          color: #fff;
+          font-size: 32px;
+          -webkit-animation: mainFadeIn 2s forwards;
+          -o-animation: mainFadeIn 2s forwards;
+          animation: mainFadeIn 2s forwards;
+          animation-delay: 1.6s;
+          opacity: 0;
+          display: flex;
+          align-items: baseline;
+          position: relative;
+  
+          span {
+            width:0px;
+            height: 0px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+  
+            background: #ffb510;
+            -webkit-animation: load 0.6s cubic-bezier(.74, .06, .4, .92) forwards;
+            animation: popIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards;
+            animation-delay: 2s;
+            margin-left: 5px;
+            margin-top: -10px;
+            position: absolute;
+            bottom: 13px;
+            right: -12px;
+  
+          }
+        }
+      }
+  
+      .role {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 30px;
+        margin-top: -10px;
+  
+        .block {
+          width: 0%;
+          height: inherit;
+          background: #e91e63;
+          position: absolute;
+          animation: secBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+          animation-delay: 2s;
+          display: flex;
+        }
+  
+
+
+        @keyframes mainBlock {
+            0% {
+              width: 0%;
+              left: 0;
+          
+            }
+            50% {
+              width: 100%;
+              left: 0;
+          
+            }
+            100% {
+              width: 0;
+              left: 100%;
+            }
+          }
+          
+          @keyframes secBlock {
+            0% {
+              width: 0%;
+              left: 0;
+          
+            }
+            50% {
+              width: 100%;
+              left: 0;
+          
+            }
+            100% {
+              width: 0;
+              left: 100%;
+            }
+          }
+          
+          @keyframes mainFadeIn {
+            0% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+          
+          
+             */
