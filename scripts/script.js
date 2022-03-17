@@ -12,6 +12,7 @@ const tvShow = document.querySelector ('.tv_show')
 const villainType = document.querySelector('.villain_type')
 const goal = document.querySelector('.goal')
 const crimes = document.querySelector('.crimes')
+const dateInput = document.querySelector('.js-birthday-input')
 audio.volume = "0.2"
 
 
@@ -73,7 +74,6 @@ characterx.addEventListener('click', function(event){
     zodiacContent.style.display = "none";
   }
 })
-
 
 
 // birthday input & response
@@ -173,10 +173,10 @@ birthdaySubmit.addEventListener('click', function(event){
     audio.src = 'sounds/'
     audio.play ();
     console.log("CANCER")
-  } else if (zodiac == "LEO") { // name needs styling
+  } else if (zodiac == "LEO") { // fine
     zodiacTitle.innerHTML = zodiac
     subheading.textContent = "JULY 23RD - AUGUST 22ND"
-    zodiacDesc.textContent = "Lorem ipsum dolor sit LEO, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    zodiacDesc.textContent = "You are very tiny and very angry. Maybe try anger management?"
     zodiacSplashArt.src = "images/characters/scrappy_splash.svg"
     characterName.src = "images/characters/names/scrappy.svg"
     characterName.style.left = "3rem"
@@ -184,34 +184,34 @@ birthdaySubmit.addEventListener('click', function(event){
     tvShow.textContent = "SCOOBY DOO"
     villainType.textContent ="HEGEMONIC FALLEN HERO"
     goal.textContent = "sacrifice uncle Scooby-Doo and steal a pure soul from him in order to transform into Scrappy Rex and become unstoppable."
-    crimes.textContent = "slavery, attempted world-domination, human sacrifice, attempted genocide, attempted avunculicide. conspiracy"
+    crimes.textContent = "slavery, attempted world-domination, human sacrifice, attempted genocide, attempted avunculicide, conspiracy"
     audio.src = 'sounds/'
     audio.play ();
     console.log("LEO")
-  } else if (zodiac == "VIRGO") { // name needs styling
+  } else if (zodiac == "VIRGO") { // fine
     zodiacTitle.innerHTML = zodiac
     subheading.textContent = "AUGUST 23RD - SEPTEMBER 22ND"
     zodiacDesc.textContent = "You are annoying and you dont know it! You also probably like chocolate milk, even though you are lactose intolerant."
     zodiacSplashArt.src = "images/characters/cheese_splash.svg"
     characterName.src = "images/characters/names/cheese.svg"
     tvShow.textContent = "FOSTER'S HOME FOR IMAGINARY FRIENDS"
-    characterName.style.bottom = ""
-    characterName.style.left = ""
-    characterName.style.width = ""
+    characterName.style.bottom = "12rem"
+    characterName.style.left = "18rem"
+    characterName.style.width = "20rem"
     villainType.textContent ="ANNOYING PEST"
     goal.textContent = "become Mac’s imaginary friend"
     crimes.textContent = "breaking and entering, operating a vehicle without a license, vandalism, public nuisance"
     audio.src = 'sounds/'
     audio.play ();
     console.log("VIRGO")
-  } else if (zodiac == "LIBRA") { // name needs styling
+  } else if (zodiac == "LIBRA") { // fine
     zodiacTitle.innerHTML = zodiac
     subheading.textContent = "SEPTEMBER 23RD - OCTOBER 22ND"
     zodiacDesc.textContent = "You don't always get your way, but when you do it doesn't always end well. Well, at least you are quite the romantic!"
     zodiacSplashArt.src = "images/characters/tom_splash.svg"
     characterName.src = "images/characters/names/tom.svg"
-    characterName.style.bottom = "6rem"
-    characterName.style.left = "18rem"
+    characterName.style.bottom = "20rem"
+    characterName.style.left = "22rem"
     tvShow.textContent = "TOM & JERRY"
     villainType.textContent ="ON & OFF ABUSER"
     goal.textContent = "catch Jerry by proving that he is a great house cat and mouse catcher"
@@ -219,14 +219,14 @@ birthdaySubmit.addEventListener('click', function(event){
     audio.src = 'sounds/tom.mp3'
     audio.play ();
     console.log("LIBRA")
-  } else if (zodiac == "SCORPIO") { // name needs styling
+  } else if (zodiac == "SCORPIO") { // fine
     zodiacTitle.innerHTML = zodiac
     subheading.textContent = "OCTOBER 23RD - NOVEMBER 20TH"
     zodiacDesc.textContent = "You are the type of person to laugh when other people are scared."
     zodiacSplashArt.src = "images/characters/katz_splash.svg"
     characterName.src = "images/characters/names/katz.svg"
     characterName.style.bottom = ""
-    characterName.style.left = ""
+    characterName.style.left = "20rem"
     tvShow.textContent = "COURAGE THE COWARDLY DOG"
     villainType.textContent ="PSYCHOPATHIC MASTERMIND"
     goal.textContent = "defeat courage"
@@ -251,7 +251,7 @@ birthdaySubmit.addEventListener('click', function(event){
     audio.src = 'sounds/'
     audio.play ();
     console.log("SAGGITARIUS")
-  } else if (zodiac == "CAPRICORN") { // needs name styling
+  } else if (zodiac == "CAPRICORN") { // fine
     zodiacContent.style.display = "grid"
     heroContent.style.display = "none"
     zodiacTitle.innerHTML = zodiac
@@ -259,9 +259,9 @@ birthdaySubmit.addEventListener('click', function(event){
     zodiacDesc.textContent = "NO BITCHES!!!!!"
     zodiacSplashArt.src = "images/characters/mojo_splash.svg"
     characterName.src = "images/characters/names/mojo_jojo.svg"
-    characterName.style.bottom = ""
-    characterName.style.left = ""
-    characterName.style.width = ""
+    characterName.style.bottom = "14rem"
+    characterName.style.left = "22rem"
+    characterName.style.width = "15rem"
     tvShow.textContent = "POWERPUFF GIRLS"
     villainType.textContent ="HEGEMONIC SUPERVILLAIN"
     goal.textContent = "put the Powerpuff Girls in an insane state and take over the world"
@@ -269,14 +269,14 @@ birthdaySubmit.addEventListener('click', function(event){
     audio.src = 'sounds/'
     audio.play ();
   console.log("CAPRICORN")
-  } else if (zodiac == "AQUARIUS") { // name needs styling
+  } else if (zodiac == "AQUARIUS") { // fine
     zodiacTitle.innerHTML = zodiac
     subheading.textContent = "JANUARY 19TH - FEBRUARY 18TH"
     zodiacDesc.textContent = "You love to shop and antagonize the people around you! Especially when you break a nail..."
     zodiacSplashArt.src = "images/characters/mandy_splash.svg"
     characterName.src = "images/characters/names/mandy.svg"
-    characterName.style.bottom = ""
-    characterName.style.left = ""
+    characterName.style.bottom = "12rem"
+    characterName.style.left = "16rem"
     tvShow.textContent = "TOTALLY SPIES"
     villainType.textContent ="EGOTISTICAL RIVAL"
     goal.textContent = "be better than clover"
