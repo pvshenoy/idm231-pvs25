@@ -124,7 +124,7 @@ birthdaySubmit.addEventListener('click', function(event){
     zodiacTitle.innerHTML = zodiac
     subheading.textContent = "MARCH 21ST - APRIL 19TH"
     zodiacDesc.textContent = "Looks like you enjoy psychological torture! You are unapologetically extravagant, and you know it."
-    zodiacSplashArt.src = "images/characters/him_splash.svg"
+    zodiacSplashArt.src = "images/characters/him_splash.png"
     characterName.src = "images/characters/names/him.svg"
     tvShow.textContent = "POWERPUFF GIRLS"
     villainType.textContent ="EXTRAVAGANT DEMON"
@@ -136,12 +136,14 @@ birthdaySubmit.addEventListener('click', function(event){
     zodiacTitle.innerHTML = zodiac
     subheading.textContent = "APRIL 20TH - MAY 20TH"
     zodiacDesc.textContent = "You are a menace to society and hate all little children. Don't worry, they hate you too!"
-    zodiacSplashArt.src = "images/characters/grim_splash.svg"
+    zodiacSplashArt.src = "images/characters/father_splash.png"
     characterName.src = "images/characters/names/father.svg"
+    characterName.style.width = "20rem"
+    characterName.style.left = "2rem"
     tvShow.textContent = "CODENAME: KIDS NEXT DOOR"
-    villainType.textContent ="HEGEMONIOUS FALLEN HERO"
-    goal.textContent = ""
-    crimes.textContent = ""
+    villainType.textContent ="TYRANNICAL PARENT"
+    goal.textContent = "ruin the lives of children"
+    crimes.textContent = "brainwashing, abuse, terrorism, attempted cannibalism"
     audio.src = 'sounds/'
     audio.play ();
     console.log("taurus")
@@ -149,7 +151,7 @@ birthdaySubmit.addEventListener('click', function(event){
     zodiacTitle.innerHTML = zodiac
     subheading.textContent = "MAY 21ST - JUNE 20TH"
     zodiacDesc.textContent = "You are sadistic and take pleasure in watching other suffer, especially on reality TV!"
-    zodiacSplashArt.src = "images/characters/chris_splash.svg"
+    zodiacSplashArt.src = "images/characters/chris_splash.png"
     characterName.src = "images/characters/names/chris.svg"
     characterName.style.bottom = "13rem"
     characterName.style.left = "2rem"
@@ -164,7 +166,7 @@ birthdaySubmit.addEventListener('click', function(event){
     zodiacTitle.innerHTML = zodiac
     subheading.textContent = "JUNE 21ST - JULY 22ND"
     zodiacDesc.textContent = "You are as cold as ice on the exterior, but deep down you are very warm and loving!"
-    zodiacSplashArt.src = "images/characters/ice_splash.svg"
+    zodiacSplashArt.src = "images/characters/ice_splash.png"
     characterName.src = "images/characters/names/ice.svg"
     tvShow.textContent = "ADVENTURE TIME"
     villainType.textContent ="TRAGIC MONARCH"
@@ -177,7 +179,7 @@ birthdaySubmit.addEventListener('click', function(event){
     zodiacTitle.innerHTML = zodiac
     subheading.textContent = "JULY 23RD - AUGUST 22ND"
     zodiacDesc.textContent = "You are very tiny and very angry. Maybe try anger management?"
-    zodiacSplashArt.src = "images/characters/scrappy_splash.svg"
+    zodiacSplashArt.src = "images/characters/scrappy_splash.png"
     characterName.src = "images/characters/names/scrappy.svg"
     characterName.style.left = "3rem"
     characterName.style.width = "20rem"
@@ -192,7 +194,7 @@ birthdaySubmit.addEventListener('click', function(event){
     zodiacTitle.innerHTML = zodiac
     subheading.textContent = "AUGUST 23RD - SEPTEMBER 22ND"
     zodiacDesc.textContent = "You are annoying and you dont know it! You also probably like chocolate milk, even though you are lactose intolerant."
-    zodiacSplashArt.src = "images/characters/cheese_splash.svg"
+    zodiacSplashArt.src = "images/characters/cheese_splash.png"
     characterName.src = "images/characters/names/cheese.svg"
     tvShow.textContent = "FOSTER'S HOME FOR IMAGINARY FRIENDS"
     characterName.style.bottom = "12rem"
@@ -208,7 +210,7 @@ birthdaySubmit.addEventListener('click', function(event){
     zodiacTitle.innerHTML = zodiac
     subheading.textContent = "SEPTEMBER 23RD - OCTOBER 22ND"
     zodiacDesc.textContent = "You don't always get your way, but when you do it doesn't always end well. Well, at least you are quite the romantic!"
-    zodiacSplashArt.src = "images/characters/tom_splash.svg"
+    zodiacSplashArt.src = "images/characters/tom_splash.png"
     characterName.src = "images/characters/names/tom.svg"
     characterName.style.bottom = "20rem"
     characterName.style.left = "22rem"
@@ -223,7 +225,7 @@ birthdaySubmit.addEventListener('click', function(event){
     zodiacTitle.innerHTML = zodiac
     subheading.textContent = "OCTOBER 23RD - NOVEMBER 20TH"
     zodiacDesc.textContent = "You are the type of person to laugh when other people are scared."
-    zodiacSplashArt.src = "images/characters/katz_splash.svg"
+    zodiacSplashArt.src = "images/characters/katz_splash.png"
     characterName.src = "images/characters/names/katz.svg"
     characterName.style.bottom = ""
     characterName.style.left = "20rem"
@@ -240,7 +242,7 @@ birthdaySubmit.addEventListener('click', function(event){
     zodiacTitle.innerHTML = zodiac
     subheading.textContent = "NOVEMBER 21ST - DECEMBER 20TH"
     zodiacDesc.textContent = "You are cynical and could not care less about what others think! "
-    zodiacSplashArt.src = "images/characters/daffy_splash.svg"
+    zodiacSplashArt.src = "images/characters/daffy_splash.png"
     characterName.src = "images/characters/names/daffy.svg"
     tvShow.textContent = "LOONEY TUNES"
     characterName.style.left = "20rem"
@@ -257,7 +259,7 @@ birthdaySubmit.addEventListener('click', function(event){
     zodiacTitle.innerHTML = zodiac
     subheading.textContent = "DECEMBER 21ST - JANUARY 18TH"
     zodiacDesc.textContent = "NO BITCHES!!!!!"
-    zodiacSplashArt.src = "images/characters/mojo_splash.svg"
+    zodiacSplashArt.src = "images/characters/mojo_splash.png"
     characterName.src = "images/characters/names/mojo_jojo.svg"
     characterName.style.bottom = "14rem"
     characterName.style.left = "22rem"
@@ -273,7 +275,7 @@ birthdaySubmit.addEventListener('click', function(event){
     zodiacTitle.innerHTML = zodiac
     subheading.textContent = "JANUARY 19TH - FEBRUARY 18TH"
     zodiacDesc.textContent = "You love to shop and antagonize the people around you! Especially when you break a nail..."
-    zodiacSplashArt.src = "images/characters/mandy_splash.svg"
+    zodiacSplashArt.src = "images/characters/mandy_splash.png"
     characterName.src = "images/characters/names/mandy.svg"
     characterName.style.bottom = "12rem"
     characterName.style.left = "16rem"
@@ -288,7 +290,7 @@ birthdaySubmit.addEventListener('click', function(event){
     zodiacTitle.innerHTML = zodiac
     subheading.textContent = "FEBRUARY 19TH - MARCH 20TH"
     zodiacDesc.textContent = "You are made of 100% pure evil and love to terrorize those around you. You are also probably immortal..."
-    zodiacSplashArt.src = "images/characters/aku_splash.svg"
+    zodiacSplashArt.src = "images/characters/aku_splash.png"
     characterName.src = "images/characters/names/aku.svg"
     characterName.style.left = "23rem";
     characterName.style.bottom = "12rem";
