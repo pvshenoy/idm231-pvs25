@@ -1,0 +1,59 @@
+body {
+    background: #232323;
+  }
+  
+  .title {
+        height: 50px;
+        max-width: 12rem;
+  }
+  
+  .box {
+      width: max-content;
+      height: 2rem;
+      position: relative;
+  }
+  .block {
+          width: 0%;
+          height: inherit;
+          height: 50px;
+          background: magenta;
+          position: absolute;
+          animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+  }
+  
+  h1 {
+          font-family: 'Poppins';
+          color: #fff;
+          font-size: 32px;
+          animation: mainFadeIn 2s forwards;
+          animation-delay: 1.6s;
+          opacity: 0;
+          /* margin-right: 30rem; */
+  }
+  
+  
+  @keyframes mainBlock {
+    0% {
+      width: 0%;
+      left: 0;
+  
+    }
+    50% {
+      width: 100%;
+      left: 0;
+  
+    }
+    100% {
+        width: 0;
+        left: 100%;
+      }
+  }
+  
+  @keyframes mainFadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
